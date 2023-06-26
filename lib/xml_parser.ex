@@ -2,6 +2,8 @@ defmodule Plug.Parsers.XML do
   @behaviour Plug.Parsers
   import Plug.Conn
 
+  def init(opts), do: opts
+
   def parse(conn, _, "xml", _headers, opts) do
     decoder =
       Keyword.get(opts, :xml_decoder) ||
