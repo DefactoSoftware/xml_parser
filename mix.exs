@@ -16,6 +16,12 @@ defmodule XmlParser.MixProject do
     ]
   end
 
+  def application do
+    [
+      extra_applications: [:xmerl]
+    ]
+  end
+
   defp package do
     [
       name: :xml_plug_parser,
