@@ -12,7 +12,7 @@ defmodule XmlParser.MixProject do
       package: package(),
       source_url: "https://github.com/defactosoftware/xml_parser",
       start_permanent: false,
-      version: "0.0.1"
+      version: "0.0.2"
     ]
   end
 
