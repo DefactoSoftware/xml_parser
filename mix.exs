@@ -33,7 +33,7 @@ defmodule XmlParser.MixProject do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: [:dev, :test]},
+      {:ex_doc, "~> 0.29.4", only: [:dev, :test]},
       {:plug, "~> 1.0"}
     ]
   end
