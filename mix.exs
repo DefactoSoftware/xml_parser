@@ -12,7 +12,13 @@ defmodule XmlParser.MixProject do
       package: package(),
       source_url: "https://github.com/defactosoftware/xml_parser",
       start_permanent: false,
-      version: "0.0.1"
+      version: "0.0.2"
+    ]
+  end
+
+  def application do
+    [
+      extra_applications: [:xmerl]
     ]
   end
 
@@ -33,7 +39,7 @@ defmodule XmlParser.MixProject do
 
   defp deps do
     [
-      {:ex_doc, ">= 0.0.0", only: [:dev, :test]},
+      {:ex_doc, "~> 0.29.4", only: [:dev, :test]},
       {:plug, "~> 1.0"}
     ]
   end

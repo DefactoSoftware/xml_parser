@@ -14,7 +14,7 @@ defmodule Plug.Parsers.XML do
     |> decode(decoder)
   end
 
-  def parse(conn, _type, subtype, _headers, _opts) do
+  def parse(conn, _type, _subtype, _headers, _opts) do
     {:next, conn}
   end
 
